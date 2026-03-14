@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react-native';
+import { fireEvent, render, screen } from '@testing-library/react-native';
 
 import { SelectList } from '.';
 
@@ -9,9 +9,14 @@ describe('Component: SelectList', () => {
       { id: '2', name: 'Campo Grande', latitude: 789, longitude: 987 },
     ];
 
-    render(<SelectList data={data} onChange={() => {}} onPress={() => {}} />);
+    // Mockando a função, simulando um click
+    const onPress = jest.fn();
+
+    render(<SelectList data={data} onChange={() => {}} onPress={onPress} />);
 
     const selectedCity = screen.getByText(/campo/i);
-    console.log(selectedCity);
+    fireEvent.press(selectedCity);
+
+    expect(onPress).toHaveBeenCalledWith(data[1]);
   });
 });
