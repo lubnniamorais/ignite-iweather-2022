@@ -16,5 +16,7 @@ describe('Component: Day', () => {
         }}
       />
     );
+
+    expect(screen.getByText('23/03')).toBeTruthy();
   });
 });
