@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1774715762504" clover="3.2.0">
+  <project timestamp="1774715762504" name="All files">
+    <metrics statements="38" coveredstatements="37" conditionals="10" coveredconditionals="9" methods="9" coveredmethods="9" elements="57" coveredelements="55" complexity="0" loc="38" ncloc="38" packages="4" files="8" classes="8"/>
+    <package name="hooks">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="useCity.ts" path="/home/lubnnia/Documentos/Projetos/Ignite/2022/ReactNative/ignite-iweather-2022/src/hooks/useCity.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="11" type="stmt"/>
+        <line num="8" count="11" type="stmt"/>
+      </file>
+    </package>
+    <package name="libs.asyncStorage">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+      <file name="cityStorage.ts" path="/home/lubnnia/Documentos/Projetos/Ignite/2022/ReactNative/ignite-iweather-2022/src/libs/asyncStorage/cityStorage.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="9" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="20" coveredstatements="19" conditionals="6" coveredconditionals="5" methods="3" coveredmethods="3"/>
+      <file name="api.ts" path="/home/lubnnia/Documentos/Projetos/Ignite/2022/ReactNative/ignite-iweather-2022/src/services/api.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="3" type="stmt"/>
+      </file>
+      <file name="getCityByNameService.ts" path="/home/lubnnia/Documentos/Projetos/Ignite/2022/ReactNative/ignite-iweather-2022/src/services/getCityByNameService.ts">
+        <metrics statements="5" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+      </file>
+      <file name="getWeatherByCityService.ts" path="/home/lubnnia/Documentos/Projetos/Ignite/2022/ReactNative/ignite-iweather-2022/src/services/getWeatherByCityService.ts">
+        <metrics statements="14" coveredstatements="14" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="46" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="66" count="2" type="stmt"/>
+        <line num="67" count="2" type="stmt"/>
+        <line num="68" count="2" type="stmt"/>
+        <line num="70" count="2" type="stmt"/>
+        <line num="71" count="4" type="stmt"/>
+        <line num="73" count="4" type="cond" truecount="4" falsecount="0"/>
+        <line num="74" count="2" type="stmt"/>
+        <line num="76" count="2" type="stmt"/>
+        <line num="78" count="2" type="stmt"/>
+        <line num="80" count="2" type="stmt"/>
+        <line num="90" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
+      <file name="getNextDays.ts" path="/home/lubnnia/Documentos/Projetos/Ignite/2022/ReactNative/ignite-iweather-2022/src/utils/getNextDays.ts">
+        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="15" type="stmt"/>
+        <line num="10" count="15" type="stmt"/>
+        <line num="12" count="15" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+      </file>
+      <file name="isDayTime.ts" path="/home/lubnnia/Documentos/Projetos/Ignite/2022/ReactNative/ignite-iweather-2022/src/utils/isDayTime.ts">
+        <metrics statements="2" coveredstatements="2" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="2" falsecount="0"/>
+      </file>
+      <file name="weatherIcons.ts" path="/home/lubnnia/Documentos/Projetos/Ignite/2022/ReactNative/ignite-iweather-2022/src/utils/weatherIcons.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="20" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
