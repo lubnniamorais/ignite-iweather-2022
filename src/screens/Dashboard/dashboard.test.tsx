@@ -15,19 +15,23 @@ import { Dashboard } from '@screens/Dashboard';
 import { api } from '@services/api';
 
 describe('Screen: Dashboard', () => {
-  it('should be show a city weather', async () => {
-    jest.spyOn(api, 'get').mockResolvedValue({
-      data: mockWeatherAPIResponse,
-    });
-
+  beforeAll(async () => {
     const city = {
       id: '1',
-      name: 'São Paulo, BR',
+      name: 'Rio do, BR',
       latitude: 123,
       longitude: 456,
     };
 
     await saveStorageCity(city);
+  });
+
+  afterAll(() => {});
+
+  it('should be show a city weather', async () => {
+    jest.spyOn(api, 'get').mockResolvedValue({
+      data: mockWeatherAPIResponse,
+    });
 
     await waitFor(() => render(<Dashboard />));
 
@@ -37,20 +41,12 @@ describe('Screen: Dashboard', () => {
   });
 
   it('should be show another selected weather city', async () => {
-    const city = {
-      id: '1',
-      name: 'Rio do Sul, BR',
-      latitude: 123,
-      longitude: 456,
-    };
+    /*
+      1 - Busca as informações do tempo/clima da cidade selecionada.
+      2 - Busca as informações da cidade.
+      3 - Busca as informações do tempo/clima da nova cidade selecionada.
+    */
 
-    await saveStorageCity(city);
-
-    /**
-     * 1 - Busca as informações do tempo/clima da cidade selecionada.
-     * 2 - Busca as informações da cidade.
-     * 3 - Busca as informações do tempo/clima da nova cidade selecionada.
-     */
     jest
       .spyOn(api, 'get')
       .mockResolvedValueOnce({
@@ -77,7 +73,7 @@ describe('Screen: Dashboard', () => {
         })
     );
 
-    await waitFor(() =>
+    waitFor(() =>
       act(() => {
         fireEvent.press(screen.getByText(cityName, { exact: false }));
       })
