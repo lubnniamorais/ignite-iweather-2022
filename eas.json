@@ -11,6 +11,11 @@
       "env": {
         "EXPO_PUBLIC_WEATHER_APP_ID": "e122d58c5ceb9c1b85c465b796374284"
       }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_WEATHER_APP_ID": "e122d58c5ceb9c1b85c465b796374284"
+      }
     }
   }
 }
