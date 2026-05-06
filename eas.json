@@ -1,17 +1,35 @@
 {
   "cli": {
-    "version": ">= 18.5.0",
+    "version": ">= 3.16.0",
     "appVersionSource": "remote"
   },
   "build": {
     "preview": {
+      "autoIncrement": true,
       "android": {
-        "distribution": "internal"
+        "distribution": "internal",
+        "autoIncrement": "versionCode"
       },
       "ios": {
         "simulator": true
-      }
+      },
+      "channel": "preview"
     },
-    "production": {}
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "autoIncrement": "versionCode"
+      },
+      "channel": "production"
+    }
+  },
+  "submit": {
+    "preview": {
+      "android": {
+        "track": "internal",
+        "serviceAccountKeyPath": "./google-services.json",
+        "releaseStatus": "draft"
+      }
+    }
   }
 }
